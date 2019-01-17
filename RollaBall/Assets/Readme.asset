@@ -52,3 +52,17 @@ MonoBehaviour:
     linkText: Post Processing
     url: https://github.com/Unity-Technologies/PostProcessing/wiki
   loadedLayout: 1
+
+How To Run This Program:
+
+Step One: 
+Open the project and look in the Assets folder.
+
+Step Two: 
+Open the Build folder.
+
+Step Three:
+Double click on rollaball.exe 
+
+Step Four:
+Enjoy!
