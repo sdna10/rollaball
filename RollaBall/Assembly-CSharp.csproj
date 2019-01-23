@@ -64,6 +64,8 @@
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Rotator.cs" />
     <Compile Include="Assets\Scripts\SetCorrectCameraHeight.cs" />
+    <Compile Include="Assets\Scripts\VR_Interactable.cs" />
+    <Compile Include="Assets\Scripts\VR_Interactor.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Reference Include="Unity.RenderPipelines.Core.Editor">
       <HintPath>C:/Users/sdna1/Documents/GitHub/rollaball/RollaBall/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
