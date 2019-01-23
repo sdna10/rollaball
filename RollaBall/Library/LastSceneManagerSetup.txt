@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/rollaball.unity
+- path: Assets/Scenes/whale.unity
   isLoaded: 1
   isActive: 1
