@@ -16,7 +16,10 @@ public class VR_Interactable : MonoBehaviour
 
     protected bool selected = false;
     private bool spotted;
+    private bool touching;
     public Animator m_Animator;
+    public Collider cam;
+    public Collider whale;
 
 
     // Start is called before the first frame update
@@ -41,6 +44,7 @@ public class VR_Interactable : MonoBehaviour
         spotted = true;
         m_Animator = gameObject.GetComponent<Animator>();
         m_Animator.SetBool("spotted", spotted);
+        
     }
 
 
@@ -74,7 +78,7 @@ public class VR_Interactable : MonoBehaviour
     {
 
         interactorHitPosition = position;
-
+        
     }
 
 
@@ -82,7 +86,6 @@ public class VR_Interactable : MonoBehaviour
     public virtual void OnInteract()
 
     {
-
         return;
 
     }
