@@ -20,6 +20,8 @@ public class VR_Interactable : MonoBehaviour
     public Animator m_Animator;
     public Collider cam;
     public Collider whale;
+    public float lengthOfFocusTime = 2.0f;
+    private float counter = 0.0f;
 
 
     // Start is called before the first frame update
@@ -27,7 +29,7 @@ public class VR_Interactable : MonoBehaviour
     public virtual void OnSelectEnter()
 
     {
-
+       
         var meshRenderer = this.GetComponent<MeshRenderer>();
 
         if (meshRenderer != null)
@@ -39,11 +41,12 @@ public class VR_Interactable : MonoBehaviour
             meshRenderer.material = selectedMat;
 
         }
+
+            selected = true;
+            spotted = true;
+            m_Animator = gameObject.GetComponent<Animator>();
+            m_Animator.SetBool("spotted", spotted);
         
-        selected = true;
-        spotted = true;
-        m_Animator = gameObject.GetComponent<Animator>();
-        m_Animator.SetBool("spotted", spotted);
         
     }
 

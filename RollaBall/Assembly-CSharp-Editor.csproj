@@ -60,7 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
+    <Compile Include="Assets\Scripts\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
     <Reference Include="Unity.RenderPipelines.Core.Editor">
       <HintPath>C:/Users/sdna1/Documents/GitHub/rollaball/RollaBall/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
