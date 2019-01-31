@@ -9,7 +9,8 @@ using UnityEngine;
 public class VR_Interactor : MonoBehaviour
 
 {
-
+    public float lengthOfFocusTime = 2.0f;
+    private float counter = 0.0f;
     private VR_Interactable selected = null;
 
 
@@ -25,7 +26,7 @@ public class VR_Interactor : MonoBehaviour
         RaycastHit hit;
 
         Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 100.0f, Color.yellow);
-
+        //counter += Time.deltaTime;
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 100.0f, layerMask))
 
         {
@@ -53,8 +54,10 @@ public class VR_Interactor : MonoBehaviour
                         }
 
                         selected = interactable;
-
-                        selected.OnSelectEnter();
+                        //if (counter > lengthOfFocusTime)
+                        //{
+                            selected.OnSelectEnter();
+                        //}
 
                     }
 

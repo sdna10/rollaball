@@ -41,9 +41,11 @@ public class VR_Interactable : MonoBehaviour
             meshRenderer.material = selectedMat;
 
         }
+       
+           selected = true;
 
-            selected = true;
             spotted = true;
+       
             m_Animator = gameObject.GetComponent<Animator>();
             m_Animator.SetBool("spotted", spotted);
         

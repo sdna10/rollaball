@@ -11,13 +11,20 @@ public class SimpleGaze : MonoBehaviour {
     public float maxRaycastDistance = 30;
 
     [SerializeField] LayerMask choosenLayers;
-	
+
+    public Texture2D vignette;
+
 	// Update is called once per frame
 	void Update () {
 		CheckLookAt();
 	}
 
-	private void CheckLookAt()
+    private void OnGUI()
+    {
+        GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), vignette);
+    }
+
+    private void CheckLookAt()
     {
     // Create a gaze ray pointing forward from the camera
     int layerMask = choosenLayers.value;
